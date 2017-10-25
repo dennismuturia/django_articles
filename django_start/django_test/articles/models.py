@@ -6,3 +6,6 @@ class Article(models.Model):
     body: models.TextField()
     likes: models.IntegerField()
     pub_date: models.DateTimeField("Published Date")
+
+    def __unicode__(self):
+        return self.title
