@@ -8,6 +8,23 @@
         <span>{{my_var}}</span>
         <article>Hello world !</article>
         <h2>The cities visited are:</h2>
-        <span>{{cities}}</span>
+        <span>
+            {% for city in cities%}
+            <ul>
+                <li>{{city}}</li>
+            </ul>
+            {%endfor%}
+
+        </span>
+        <hr>
+        <span>
+            {%if years < 10%}
+            you are a child
+            {%elif years <= 18%}
+            you are a teenager
+            {% elif years < 35%}
+            you are old
+            {%endif%}
+        </span>
     </body>
 </html>
