@@ -21,4 +21,5 @@ from articles import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^hello/', views.hello, name='hello'),
+    url(r'^container/', views.container, name="container"),
 ]

@@ -7,3 +7,6 @@ def hello(request):
     years = 23
     cities_array = ['Nairobi', 'Meru', 'Nyahururu']
     return render(request, 'hello.html', {'my_var':my_variable, 'years':years, 'cities':cities_array})
+
+def container(request):
+    return render(request, 'container.html')
